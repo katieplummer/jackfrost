@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Blog</h1>
+<ul>
+    {% for article in articles %}
+    <li>
+        {{article.title}}
+        {{article.date}}
+        {{article.body}}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
