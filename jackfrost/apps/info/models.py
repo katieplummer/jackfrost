@@ -12,7 +12,6 @@ class Service(models.Model):
     def images(self):
         return ServiceImage.objects.filter(service=self)
 
-
 class ServiceImage(models.Model):
     image = models.ImageField(upload_to="service_images")
     service = models.ForeignKey(Service, on_delete=models.CASCADE, default=None)

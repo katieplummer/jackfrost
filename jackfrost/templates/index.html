@@ -82,10 +82,61 @@
         </div>
       </div>
     </div>
-    <!-- /.row -->
+    <!-- End Marketing Icons Section -->
 
+<!-- About Section -->
+<section class="page-section bg-primary text-white mb-0" id="about">
+  <div class="container">
+
+    <!-- About Section Heading -->
+    <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+    <!-- Icon Divider -->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <!-- About Section Content -->
+    <div class="row">
+      <div class="col-lg-4 ml-auto">
+        <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+      </div>
+      <div class="col-lg-4 mr-auto">
+        <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+      </div>
+    </div>
+
+    <!-- About Section Button -->
+    <div class="text-center mt-4">
+      <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+        <i class="fas fa-download mr-2"></i>
+        Free Download!
+      </a>
+    </div>
+
+  </div>
+</section>
+<hr>
+
+<!-- Call to Action Section -->
+<div class="row mb-4">
+  <div class="col-md-8">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+  </div>
+</div>
+<!-- End Call to Action Section -->
+
+<!-- Event Tiles -->
     <h2 class="text-center">Events</h2>
     <div class="row">
+      <div class="card-deck">
       {% for event in events %}
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
@@ -100,13 +151,14 @@
       </div>
         {% endfor %}
     </div>
-    <!-- /.row -->
+    </div>
+    <!-- End Event Tiles -->
 
+    <!-- Blog Tiles -->
     <h2 class="text-center">Blog Posts</h2>
     <div class="row">
       <div class="card-deck">
       {% for article in articles %}
-
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100 text-center">
           <a href="#"><img class="card-image" src="{{article.first_image.image.url}}" alt=""></a>
@@ -147,15 +199,7 @@
 
     <hr>
 
-    <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
-      </div>
-    </div>
+    
 
   </div>
   <!-- /.container -->

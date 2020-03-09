@@ -2,14 +2,6 @@ body {
   padding-top: 56px;
 }
 
-footer {
-  background-color: #00644b;
-}
-
-btn-primary {
-  color: #00644b;
-}
-
 .navbar {
   background-color: white;
 }
@@ -25,7 +17,4 @@ btn-primary {
 
 .portfolio-item {
   margin-bottom: 30px;
-}
-.card {
-  border-color: white;
 }

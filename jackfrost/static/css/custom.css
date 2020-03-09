@@ -1,4 +1,94 @@
+footer {
+    background-color: #00644b;
+  }
+
+  a {
+    color: #00644b;
+  }
+
+.btn-primary {
+    background-color: #00644b;
+    border-color: #00644b;
+}
+
+.btn-secondary {
+    background-color: pink;
+    color: black;
+    border-color: pink;
+}
+
+.btn-social {
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
 .card-image {
     height:325px; 
     width:100%;
 }
+
+.card {
+    border-color: white;
+  }
+  
+  .divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 1rem;
+    border-color: white !important;
+  }
+  .divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+  }
+  
+  .divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+  }
+  
+  .divider-custom .divider-custom-icon {
+    color: #2c3e50 !important;
+    font-size: 2rem;
+  }
+  
+  .divider-custom.divider-light .divider-custom-line {
+    background-color: #fff;
+  }
+  
+  .divider-custom.divider-light .divider-custom-icon {
+    color: #fff !important;
+  }
+
+.email {
+    color: pink;
+}
+
+.page-section {
+    padding: 6rem 0;
+  }
+  
+  .page-section .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .page-section .page-section-heading {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
