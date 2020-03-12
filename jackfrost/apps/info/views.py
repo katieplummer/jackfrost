@@ -22,7 +22,7 @@ def index_view(request):
 
 class ServiceListView(ListView):
     model = Service
-    template_name = "info/service.html"
+    template_name = "info/home2.html"
     context_object_name = "services"
 
 class ServiceDetailView(DetailView):

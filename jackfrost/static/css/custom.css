@@ -1,21 +1,166 @@
 footer {
-    background-color: #00644b;
+    background-color: #F0E9D7;
   }
 
-  a {
+a {
     color: #00644b;
   }
+h1 {
+    font-family: Montserrat Alternates, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    color: #4A5337;
+  }
+h2 {
+    font-family: montserrat-alternates, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+		font-size: 25px;
+    color: #4A5337;
+  }
+Montserrat Regular
 
-.btn-primary {
-    background-color: #00644b;
-    border-color: #00644b;
-}
+font-family: montserrat, sans-serif;
 
-.btn-secondary {
-    background-color: pink;
-    color: black;
-    border-color: pink;
-}
+font-weight: 400;
+
+font-style: normal;
+
+
+Montserrat Italic
+
+font-family: montserrat, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Montserrat Bold
+
+font-family: montserrat, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Montserrat Bold Italic
+
+font-family: montserrat, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Montserrat Alternates Regular
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Montserrat Regular
+
+font-family: montserrat, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Montserrat Italic
+
+font-family: montserrat, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Montserrat Bold
+
+font-family: montserrat, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Montserrat Bold Italic
+
+font-family: montserrat, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Montserrat Alternates Regular
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Montserrat Alternates Italic
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Montserrat Alternates Bold
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Montserrat Alternates Bold Italic
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Montserrat Alternates Bold
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Montserrat Alternates Bold Italic
+
+font-family: montserrat-alternates, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
 
 .btn-social {
     border-radius: 100%;
@@ -27,6 +172,18 @@ footer {
     align-items: center;
   }
 
+.btn {
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #E07E55;
+    border-color: #E07E55;
+    letter-spacing: 0.5px;
+  }
+
 .card-image {
     height:325px; 
     width:100%;
@@ -35,60 +192,107 @@ footer {
 .card {
     border-color: white;
   }
-  
-  .divider-custom {
-    margin: 1.25rem 0 1.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .divider-custom .divider-custom-line {
-    width: 100%;
-    max-width: 7rem;
-    height: 0.25rem;
-    background-color: white;
-    border-radius: 1rem;
-    border-color: white !important;
-  }
-  .divider-custom .divider-custom-line:first-child {
-    margin-right: 1rem;
-  }
-  
-  .divider-custom .divider-custom-line:last-child {
-    margin-left: 1rem;
-  }
-  
-  .divider-custom .divider-custom-icon {
-    color: #2c3e50 !important;
-    font-size: 2rem;
-  }
-  
-  .divider-custom.divider-light .divider-custom-line {
-    background-color: #fff;
-  }
-  
-  .divider-custom.divider-light .divider-custom-icon {
-    color: #fff !important;
-  }
 
-.email {
-    color: pink;
+/* Symbols */
+#facebook {
+  position: absolute;
+  width: 14.267px;
+  height: 26.638px;
+  left: 840px;
+  top: 19.362px;
+  overflow: visible;
 }
-
-.page-section {
-    padding: 6rem 0;
-  }
-  
-  .page-section .page-section-heading {
-    font-size: 2.25rem;
-    line-height: 2rem;
-  }
-  
-  @media (min-width: 992px) {
-    .page-section .page-section-heading {
-      font-size: 3rem;
-      line-height: 2.5rem;
-    }
-  }
+.Icon_awesome_facebook_f {
+  overflow: visible;
+  position: absolute;
+  width: 14.268px;
+  height: 26.638px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#instagram {
+  position: absolute;
+  width: 29.289px;
+  height: 29.283px;
+  left: 894.152px;
+  top: 18.972px;
+  overflow: visible;
+}
+.Icon_awesome_instagram {
+  overflow: visible;
+  position: absolute;
+  width: 29.289px;
+  height: 29.283px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#pinterest {
+  position: absolute;
+  width: 27px;
+  height: 35.094px;
+  left: 958.07px;
+  top: 16.067px;
+  overflow: visible;
+}
+.Icon_awesome_pinterest_p {
+  overflow: visible;
+  position: absolute;
+  width: 27px;
+  height: 35.094px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#twitter {
+  position: absolute;
+  width: 36px;
+  height: 29.239px;
+  left: 1013.6px;
+  top: 20.881px;
+  overflow: visible;
+}
+.Icon_awesome_twitter {
+  overflow: visible;
+  position: absolute;
+  width: 36px;
+  height: 29.239px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#next {
+  position: absolute;
+  width: 11.115px;
+  height: 18px;
+  left: 1803px;
+  top: 313px;
+  overflow: visible;
+}
+.Icon_material_navigate_next {
+  overflow: visible;
+  position: absolute;
+  width: 11.115px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#prev {
+  position: absolute;
+  width: 11.115px;
+  height: 18px;
+  left: 85px;
+  top: 313px;
+  overflow: visible;
+}
+.Icon_material_navigate_before {
+  overflow: visible;
+  position: absolute;
+  width: 11.115px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
