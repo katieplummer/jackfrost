@@ -19,147 +19,6 @@ h2 {
 		font-size: 25px;
     color: #4A5337;
   }
-Montserrat Regular
-
-font-family: montserrat, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
-
-
-Montserrat Italic
-
-font-family: montserrat, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-
-Montserrat Bold
-
-font-family: montserrat, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Montserrat Bold Italic
-
-font-family: montserrat, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
-
-
-Montserrat Alternates Regular
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
-
-
-Montserrat Regular
-
-font-family: montserrat, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
-
-
-Montserrat Italic
-
-font-family: montserrat, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-
-Montserrat Bold
-
-font-family: montserrat, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Montserrat Bold Italic
-
-font-family: montserrat, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
-
-
-Montserrat Alternates Regular
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;
-
-
-Montserrat Alternates Italic
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-
-Montserrat Alternates Bold
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Montserrat Alternates Bold Italic
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
-
-
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-
-Montserrat Alternates Bold
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 700;
-
-font-style: normal;
-
-
-Montserrat Alternates Bold Italic
-
-font-family: montserrat-alternates, sans-serif;
-
-font-weight: 700;
-
-font-style: italic;
 
 
 .btn-social {
@@ -191,6 +50,11 @@ font-style: italic;
 
 .card {
     border-color: white;
+  }
+.card-text {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
 
 /* Symbols */

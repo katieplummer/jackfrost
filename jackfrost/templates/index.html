@@ -41,43 +41,22 @@
 
   <!-- Page Content -->
   <div class="container">
-   
-    <svg class="Path_5" fill="rgba(244,200,176,1)">
-      <path id="Path_5" d="M 0 0 L 1920 0 L 1920 578 L 0 578 L 0 0 Z">
-      </path>
-    </svg>
-
     <br>
     <h1 class="text-center">Where Creativity and Quality Meet</h1> 
     <br>
-    <!-- Marketing Icons Section -->
     <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <h4 class="card-title">
-                    <i class="fas fa-seedling fa-3x"></i>
-                    <br>
-                    Garden Center</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
+      <div class="col-md-3">
+        <img src="{% static 'images/logo.svg' %}" class="img-fluid">
       </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <h2 class="card_title">Garden Center</h2>
-          <svg class="Rectangle_8">
-            <rect fill="rgba(240,233,215,1)" id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="479" height="92">
-            </rect>
-          </svg>
-    
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-        
+      <div class="col-md-6">
+        <p>
+          this is filler text. 
+          <br>
+          eunfwuenewoiefnewufwediediendoined nwehednwiuefnweiufnwefiunewfiunwefiuwenfwienfweiufnweiufnewifuwnefiuwenfwieufnweoufnweiufinwefunweiuwenfiuwenweun
+        </p>
       </div>
     </div>
-        
+    <!-- Marketing Icons Section -->
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
@@ -118,23 +97,20 @@
     <!-- End Marketing Icons Section -->
 
 <!-- About Section -->
-<section class="page-section bg-primary text-white mb-0" id="about">
+<section class="page-section bg-primary text-white" id="about">
   <div class="container">
 
     <!-- About Section Heading -->
     <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
 
     <!-- Icon Divider -->
-    <div class="divider-custom divider-light">
-      <div class="divider-custom-line"></div>
+    
       <div class="divider-custom-icon">
         <i class="fas fa-star"></i>
       </div>
-      <div class="divider-custom-line"></div>
-    </div>
 
     <!-- About Section Content -->
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-lg-4 ml-auto">
         <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
       </div>
@@ -144,7 +120,7 @@
     </div>
 
     <!-- About Section Button -->
-    <div class="text-center mt-4">
+    <div class="text-center">
       <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
         <i class="fas fa-download mr-2"></i>
         Free Download!
@@ -156,7 +132,7 @@
 <hr>
 
 <!-- Call to Action Section -->
-<div class="row mb-4">
+<div class="row">
   <div class="col-md-8">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
   </div>
@@ -203,37 +179,22 @@
           </div>
         </div>
       </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="card bg-dark text-white">
+          <img class="card-img" src="{{article.first_image.image.url}}" alt="Card image">
+          <div class="card-img-overlay">
+            <h2 class="card-title">{{article.title}}</h2>
+            <p class="card-text">{{article.preview}}</p>
+          </div>
+        </div>
+      </div>
         {% endfor %}
       </div>
     </div>
     <!-- /.row -->
 
-    <!-- Features Section -->
-    <!-- <div class="row">
-      <div class="col-lg-6">
-        <h2>Modern Business Features</h2>
-        <p>The Modern Business template by Start Bootstrap includes:</p>
-        <ul>
-          <li>
-            <strong>Bootstrap v4</strong>
-          </li>
-          <li>jQuery</li>
-          <li>Font Awesome</li>
-          <li>Working contact form with validation</li>
-          <li>Unstyled page elements for easy customization</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-      </div>
-    </div> -->
-    <!-- /.row -->
-
-    <hr>
-
-    
-
+    <br>
   </div>
   <!-- /.container -->
   {% endblock %}
