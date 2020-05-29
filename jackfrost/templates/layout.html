@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,130 +8,71 @@
   <meta name="author" content="">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://kit.fontawesome.com/78a62381c9.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
   <title>Jack Frost Landscapes & Garden Center</title>
-
-   <!-- Bootstrap core CSS -->
-   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-   <!-- Custom styles for this template -->
-   <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
-   <link href="{% static 'css/custom.css' %}" rel="stylesheet">
-   <link rel="stylesheet" href="https://use.typekit.net/okr3osx.css">
-   <script src="https://kit.fontawesome.com/78a62381c9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <!-- Header -->
+<header>
+  <!-- Logo -->
+  <div class="logo">
+    <a href="{% url 'index' %}"><img src="{% static 'images/logo.svg' %}"></a>
+  </div>
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'index' %}">
-        <img src="{% static 'images/logo.svg' %}" alt="logo" width="150" class="d-inline-block align-top">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'service' %}">Garden Center</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'service' %}">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">
-              Contact
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+  <ul class="nav">
+   <a href="{% url 'shop' %}"><li>Shop</li></a>
+   <a href="{% url 'service' %}"><li>Design</li></a>
+   <a href="{% url 'blog' %}"><li>Blog</li></a>
+   <a href="{% url 'contact' %}"><li>Contact</li></a>
+  </ul>
+</header>
+  <!-- End Header -->
     {% block content %}
     {% endblock %}
+  <!-- Footer -->
+  <hr>
+<footer>
+  <div class="row">
+    <div class="col">
+      <h2>Contact</h2>
+      <p>info@jackfrostgardens.com</p>
+      <p>757-368-4477</p>
+      <p>3168 Holland Rd.</p>
+      <p>Virginia Beach, VA 23454</p>
+    </div>
+    <div class="col">
+      <h2>Hours</h2>
+      <p>Open 7 days a week!</p>
+      <p>Mon-Sat: 7AM-5PM</p>
+      <p>Sun: 10AM-4PM</p>
+    </div>
+    <div class="col">
+      <h2>Links</h2>
+      <a href=""><p>About</p></a>
+      <a href=""><p>Careers</p></a>
+      <a href=""><p>Material Calculator</p></a>
+      <a href=""><p>Bulk Materials</p></a>
+    </div>
+  </div>
+  <div class="row">
+    <h2>Sign-up for our newsletter!</h2>
+    <form>
+      <input>
+      <button>Subscribe</button>
+    </form>
+    <div id="socials"></div>
+    <h2>Stay Connected</h2>
+      <div id="social-btns">
+        <a href=""><i class="fab fa-facebook fa-lg"></i></a>
+        <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+        <a href=""><i class="fab fa-pinterest fa-lg"></i></a>
+        <a href=""><i class="fab fa-yelp fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 
-<!-- Footer -->
-<footer class="page-footer text-left text-light">
-  <div class="container">
-    <div class="row">
-
-
-      <!-- Grid column -->
-      <div class="col-lg-4 mt-4 mb-4">
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-        <form action="https://jackfrostgardens.us3.list-manage.com/subscribe/post?u=77346ca4cd54c26093dd738c0&amp;id=301f994857" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <h2 class="text-uppercase mb-4 font-weight-bold">Subscribe</h2>
-        <div class="mc-field-group">
-          <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="your@email.com">
-        </div>
-        <br>
-        <div class="mc-field-group">
-          <input type="text" value="" name="FNAME" class="required form-control" id="mce-FNAME" placeholder="John Doe">
-        </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_77346ca4cd54c26093dd738c0_301f994857" tabindex="-1" value=""></div>
-            <br>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-secondary"></div>
-            </div>
-        </form>
-        </div>
-              </div>
-      <!-- Grid column -->
-      <hr class="w-100 clearfix d-md-none">
-      <!-- Grid column -->
-       <!-- Social buttons -->
-       <div class="col-lg-4 mt-4">
-        <h2 class="text-uppercase mb-4 font-weight-bold ">Follow Us</h2>
-        <p>
-             <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="">
-               <i class="fab fa-facebook-f"></i>
-             </a>
-             <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="">
-               <i class="fab fa-instagram"></i>
-             </a>
-             <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="">
-               <i class="fab fa-pinterest"></i>
-             </a>
-       </p>
-       </div>
-       <!-- Grid column -->
-       <hr class="w-100 clearfix d-md-none">
-      <!-- Grid column -->
-      <div class="col-lg-4">
-        <h2 class="text-uppercase mt-4 font-weight-bold footer">Contact</h2>
-        <p>
-          <i class="fas fa-home mr-3"></i>3168 Holland Rd 
-            Virginia Beach, VA 23453</p>
-        <p>
-          <i class="fas fa-envelope mr-3 "></i><a class="email" href="info@jackfrostgardens.com">info@jackfrostgardens.com</a></p>
-        <p>
-          <i class="fas fa-phone mr-3"></i>757 368 4477</p>
-      </div>
-      <!-- Grid column -->
-    <!-- Footer links -->
-    <hr>
-      </div>
-      <!-- Grid column -->
-    </div>
-    <!-- Grid row -->
-  </div>
-  <!-- Footer Links -->
-</footer>
-<!-- Footer -->
-
-<!-- Bootstrap core JavaScript -->
-<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </html>

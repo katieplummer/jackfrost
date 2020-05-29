@@ -1,16 +1,26 @@
 {% extends "layout.html" %}
-
+{% load static %}
 {% block content %}
-<h1>Shop</h1>
+<div>
+  <div class="center background">
+    <h1>Jack Frost Garden Center</h1>
+    <h3>At our garden center you'll find a beautiful selection of perennials, annuals, shrubs, and trees, as well as some indoor plants. We also carry garden decor, outdoor furniture, garden solutions, and much more!</h3>
+</div>
+  <div class="center background">
+    <h1>Shop</h1>
+    <h3>Browse bulk materials and other products for sale at the garden center.</h3>
+</div>
+  <div class="tiles">
     {% for product in products %}
-    <div class="card" style="width: 18rem;">
-         <img src="..." class="card-img-top" alt="...">
-         <div class="card-body">
-            <h5 class="card-title">{{product.name}}</h5>
-            <p class="card-text">{{product.description}}</p>
-            <p class="card-text">{{product.price}}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    {% endfor %}
+  <div class="card">
+  <img src="{{article.first_image.image.url}}">
+  <h2>{{product.name}}</h2>
+  <p>{{product.description}}</p>
+  <p>{{product.price}}</p>
+  <a href="">Learn More</a>
+  </div>
+  {% endfor %}
+</div>
+</div>
+
 {% endblock %}
