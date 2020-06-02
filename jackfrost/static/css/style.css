@@ -94,6 +94,14 @@ i{
 .fa-star{
   color:white;
 }
+
+
+input{
+  margin-bottom: 1rem;
+  width: 500px;
+  padding: .5rem;
+  
+}
 /* Divs */
 div{
   margin-bottom: 1.5rem;
@@ -111,16 +119,16 @@ div{
   object-fit: cover;
   margin-right: 1rem;
 }
-#home{
+.home{
   display: flex;
   flex-direction: row;
   justify-content: center;
   /* justify-content: center; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
-#home img{
-  height: 500px;
-  width: 500px;
+.home img{
+  width: 30%;
+  height: 50%;
   object-fit: cover;
   margin-right: 1rem;
 }
@@ -129,13 +137,16 @@ div{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-#reviews{
+.reviews{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   text-align: center;
   background-color: #BCDABB;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
+}
+.reviews div{
+  margin: 1rem;
 }
 .row{
   display: flex;
@@ -144,10 +155,11 @@ div{
   flex-wrap: wrap;
 }
 .contact{
-  display: flex;
-  flex-direction: row;
+  display: inline;
+  text-align: center;
+  /* flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .tiles{
   display:flex;
@@ -160,7 +172,7 @@ div{
   justify-content: center;
 }
 #sales img{
-  height: 400px;
+  width: 30%;
   object-fit: cover;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -181,11 +193,63 @@ div{
 
 /* Media Queries */
 @media (max-width: 991px) {
+
 }
 @media (max-width: 767px) {
+  html{
+  margin: .2rem;
+  }
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home img{
+    width: 80%;
+    margin: 1rem;
+  }
   .background{
     background-color: white;
   }
+  .reviews{
+    background-color: white;
+  }
+  .fa-star{
+    color: #BCDABB;
+  }
+  #sales {
+    display: block;
+    text-align: center;
+  }
+  #sales img{
+    width: 40%;
+  }
+  .sideways-up{
+    writing-mode: horizontal-tb;
+    text-align: center;
+    transform: none;
+    text-transform: uppercase;
+  }
+  .sideways-down{
+    display: none;
+}
+.tiles{
+  flex-direction: column;
+  align-items: center;
+  }
+.card{
+  width: 90%;
+}
+.card a{
+  margin-bottom: 2rem;
+}
 }
 @media (max-width: 479px) {
+  input{
+    width: 300px;
+  }
+  #sales img{
+    margin:1rem;
+    width: 80%;
+  }
+  
 }

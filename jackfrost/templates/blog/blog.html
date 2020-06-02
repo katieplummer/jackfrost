@@ -12,7 +12,7 @@
   <img src="{{article.first_image.image.url}}">
   <h2>{{article.title}}</h2>
   <p>{{article.preview}}...</p>
-  <a href="">Read More</a>
+  <a href="{% url 'blog' %}">Read More</a>
   </div>
   {% endfor %}
 </div>
