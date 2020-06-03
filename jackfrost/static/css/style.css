@@ -57,7 +57,10 @@ h3{
   font-weight: 100;
 }
 p {
-  font-size: .8rem;
+  font-size: .9rem;
+}
+.small{
+    font-size: .8rem;
 }
 .center{
   text-align: center;
@@ -95,6 +98,27 @@ i{
   color:white;
 }
 
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #BCDABB;
+  color: white;
+  border: 1px solid #BCDABB;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 input{
   margin-bottom: 1rem;
@@ -134,8 +158,7 @@ div{
 }
 .background{
   background-color: #BCDABB;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 .reviews{
   display: flex;
@@ -153,6 +176,20 @@ div{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.history{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.history div{
+  width: 50%;
+}
+.history img{
+  width: 100%;
+  object-fit: cover;
+  margin:1rem;
 }
 .contact{
   display: inline;
@@ -191,13 +228,14 @@ div{
  object-fit: cover;
 }
 
+
 /* Media Queries */
 @media (max-width: 991px) {
 
 }
 @media (max-width: 767px) {
   html{
-  margin: .2rem;
+  margin: .4rem;
   }
   .home {
     flex-direction: column;
@@ -209,6 +247,7 @@ div{
   }
   .background{
     background-color: white;
+    padding:0rem;
   }
   .reviews{
     background-color: white;
@@ -241,6 +280,23 @@ div{
 }
 .card a{
   margin-bottom: 2rem;
+}
+.history{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.history div{
+  width: 100%;
+}
+.history img{
+  width:80%;
+}
+h2{
+  text-align: center;
+}
+ul li{
+  text-align: center;
 }
 }
 @media (max-width: 479px) {

@@ -37,23 +37,23 @@
   <div class="row">
     <div class="col">
       <h2>Contact</h2>
-      <p>info@jackfrostgardens.com</p>
-      <p>757-368-4477</p>
-      <p>3168 Holland Rd.</p>
-      <p>Virginia Beach, VA 23454</p>
+      <p class="small">info@jackfrostgardens.com</p>
+      <p class="small">757-368-4477</p>
+      <p class="small">3168 Holland Rd.</p>
+      <p class="small">Virginia Beach, VA 23454</p>
     </div>
     <div class="col">
       <h2>Hours</h2>
-      <p>Open 7 days a week!</p>
-      <p>Mon-Sat: 7AM-5PM</p>
-      <p>Sun: 10AM-4PM</p>
+      <p class="small">Open 7 days a week!</p>
+      <p class="small">Mon-Sat: 7AM-5PM</p>
+      <p class="small">Sun: 10AM-4PM</p>
     </div>
     <div class="col">
       <h2>Links</h2>
-      <a href=""><p>About</p></a>
-      <a href=""><p>Careers</p></a>
-      <a href=""><p>Material Calculator</p></a>
-      <a href=""><p>Bulk Materials</p></a>
+      <a href="{% url 'about' %}"><p class="small">About</p></a>
+      <a href=""><p class="small">Careers</p></a>
+      <a href="{% url 'shop' %}"><p class="small">Material Calculator</p></a>
+      <a href="{% url 'shop' %}"><p class="small">Bulk Materials</p></a>
     </div>
   </div>
   <div class="row">
